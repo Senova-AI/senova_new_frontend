@@ -5,7 +5,7 @@ import { SplitText } from "gsap/SplitText";
 import React from "react";
 import { FaDownload } from "react-icons/fa";
 
-gsap.registerPlugin(ScrollTrigger,SplitText);
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const How = () => {
   useGSAP(() => {
@@ -39,7 +39,7 @@ const How = () => {
         // markers: true,
         scrub: 0.3,
       },
-      defaults: { ease: "none" ,willChange : "transform opacity filter" },
+      defaults: { ease: "none", willChange: "transform opacity filter" },
     });
 
     tl.fromTo(
@@ -54,7 +54,8 @@ const How = () => {
         opacity: 1,
         filter: "blur(0px)",
         stagger: 0.05,
-      },"a"
+      },
+      "a"
     );
     tl.fromTo(
       subTitle.chars,
@@ -68,7 +69,8 @@ const How = () => {
         opacity: 1,
         filter: "blur(0px)",
         stagger: 0.03,
-      },"a"
+      },
+      "a"
     );
   });
 
@@ -85,7 +87,7 @@ const How = () => {
               Follow these simple steps to load the Senova AI extension and
               begin your journey to mindful learning.
             </p>
-           <p className="text-[#1e1e1e] text-[2vw] max-[599px]:text-[6vw] leading-[1.3] font-semibold mt-6 max-[599px]:mt-20">
+            <p className="text-[#1e1e1e] text-[2vw] max-[599px]:text-[6vw] leading-[1.3] font-semibold mt-6 max-[599px]:mt-20">
               Step-1
             </p>
             <p className="text-[#4a4a4a] text-[1.5vw] max-[599px]:text-[3.5vw] leading-[1.3] font-semibold">
@@ -135,7 +137,7 @@ const How = () => {
             </p>
             <div className=" overflow-hidden max-[599px]:w-full w-[70%] h-[50%] mt-10 max-[599px]:mt-0 max-[599px]:px-4">
               <img
-                className="w-full h-full object-contain rounded-xl" 
+                className="w-full h-full object-contain rounded-xl"
                 src="/2.png"
                 alt=""
               />

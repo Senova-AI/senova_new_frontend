@@ -27,7 +27,7 @@ gsap.ticker.lagSmoothing(0);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-     <CustomCursor />
+    <CustomCursor />
     <div className="fixed top-0 left-0 w-full h-full z-3 pointer-events-none">
         <Noise
           patternSize={250}

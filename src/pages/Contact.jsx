@@ -14,7 +14,7 @@ import { SplitText } from "gsap/SplitText";
 
 const Contactdata = [
   {
-    name: "Akash Jaiswal",
+    name: "Aakash Jaiswal",
     role: "Team Leader",
     imageSrc: "/aakash2.svg",
     linkedin: "https://www.linkedin.com/in/aakash-jaiswal-773bb9244",
@@ -38,14 +38,14 @@ const Contactdata = [
     mail: "khansameer84233@gmail.com",
   },
   {
-    name: "Luis Lorens",
-    role: "Sicologist (Tester)",
-    imageSrc: "https://images.unsplash.com/photo-1605083608390-a397bb302853?q=80&w=718&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Isha Surana",
+    role: "Clinical Psycologist & Researcher",
+    imageSrc: "/isha.svg",
     linkedin: "https://www.linkedin.com/in/tester-sicologist/",
     twitter: "https://twitter.com/tester_sicologist",
     mail: "tester.sicologist@example.com",
-  }
-]
+  },
+];
 
 const CameraController = () => {
   const mousePosition = useRef({ x: 0, y: 0 });
@@ -76,11 +76,10 @@ const CameraController = () => {
   return null;
 };
 
-gsap.registerPlugin(SplitText)
+gsap.registerPlugin(SplitText);
 
 const Contact = () => {
-
-  useGSAP(()=>{
+  useGSAP(() => {
     let head = SplitText.create(".cTitle", { type: "chars" });
     let subHead = SplitText.create(".cSubTitle", { type: "chars" });
 
@@ -113,15 +112,15 @@ const Contact = () => {
         opacity: 0,
         duration: 0.3,
         filter: "blur(5px)",
-        stagger : "1"
+        stagger: "1",
       },
       "-=1"
     );
-  },[])
+  }, []);
 
   return (
     <>
-      <Loader/>
+      <Loader />
       <Navbar />
       <div className="fixed top-0 left-0 w-full h-full z-1">
         <Canvas id="canvas">
@@ -130,42 +129,43 @@ const Contact = () => {
           <Scene />
         </Canvas>
       </div>
-      <main className="w-full min-h-screen relative z-2 flex items-center justify-center flex-col gap-20 max-[599px]:gap-10 max-[599px]:py-20">
-      <div className="w-full flex items-center justify-center flex-col" >
-      <h1 className="text-[3vw] max-[599px]:text-[9vw] cTitle text-[#1e1e1e] font-semibold">
-      Meet Our Team
-        </h1>
-        <p className="w-[50%] text-center max-[599px]:w-full cSubTitle text-[#4a4a4a] text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.2] font-medium">
-        The brilliant minds behind Senova AI, revolutionizing human-AI interaction through advanced healthcare technology.
-        </p>
-      </div>
-      <div className="w-full flex items-center justify-center gap-10 max-[599px]:flex-wrap max-[599px]:gap-6 cards">
-        {Contactdata.map((item, index)=>(
-          <TiltedCard
-          key={index}
-          imageSrc={item.imageSrc}
-          altText={item.name + item.role}
-          captionText={item.role}
-          containerHeight="450px"
-          containerWidth="350px"
-          imageHeight="450px"
-          imageWidth="350px"
-          rotateAmplitude={12}
-          scaleOnHover={1.1}
-          showMobileWarning={false}
-          showTooltip={true}
-          displayOverlayContent={true}
-          linkedin={item.linkedin}
-          twitter={item.twitter}
-          mail={item.mail}
-          overlayContent={
-            <p className="tilted-card-demo-text mt-6 ml-6 bg-black/20 text-[#dedede] px-4 py-1 rounded-full">
-              {item.name}
-            </p>
-          }
-        />
-        ))}
-      </div>
+      <main className="w-full min-h-screen relative z-2 flex items-center justify-center flex-col gap-20 max-[599px]:gap-10 max-[599px]:py-20 max-[599px]:px-4">
+        <div className="w-full flex items-center justify-center flex-col">
+          <h1 className="text-[3vw] max-[599px]:text-[9vw] cTitle text-[#1e1e1e] font-semibold">
+            Meet Our Team
+          </h1>
+          <p className="w-[50%] text-center max-[599px]:w-full cSubTitle text-[#4a4a4a] text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.2] font-medium">
+            The brilliant minds behind Senova AI, revolutionizing human-AI
+            interaction through advanced healthcare technology.
+          </p>
+        </div>
+        <div className="w-full flex items-center justify-center gap-10 max-[599px]:flex-wrap max-[599px]:gap-6 cards">
+          {Contactdata.map((item, index) => (
+            <TiltedCard
+              key={index}
+              imageSrc={item.imageSrc}
+              altText={item.name + item.role}
+              captionText={item.role}
+              containerHeight="450px"
+              containerWidth="350px"
+              imageHeight="450px"
+              imageWidth="350px"
+              rotateAmplitude={12}
+              scaleOnHover={1.1}
+              showMobileWarning={false}
+              showTooltip={true}
+              displayOverlayContent={true}
+              linkedin={item.linkedin}
+              twitter={item.twitter}
+              mail={item.mail}
+              overlayContent={
+                <p className="tilted-card-demo-text mt-6 ml-6 bg-black/20 text-[#dedede] px-4 py-1 rounded-full">
+                  {item.name}
+                </p>
+              }
+            />
+          ))}
+        </div>
       </main>
       <Footer />
     </>

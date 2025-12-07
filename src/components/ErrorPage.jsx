@@ -26,7 +26,10 @@ const ErrorPage = () => {
   }, []);
 
   return (
-    <div cz-shortcut-listen="true" className="ml-40 mt-20">
+    <div
+      cz-shortcut-listen="true"
+      className="ml-40 mt-20 max-[1024px]:ml-0 max-[1024px]:mt-0 max-[1024px]:flex max-[1024px]:items-center max-[1024px]:justify-center max-[1024px]:max-[1024px]:h-screen "
+    >
       <a target="_blank" href="https://senova.in">
         <div class="container">
           <div class="row">

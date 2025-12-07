@@ -22,7 +22,6 @@ import gsap from "gsap";
 gsap.registerPlugin(SplitText);
 
 const Testimonials = () => {
-
   useGSAP(() => {
     let title = SplitText.create(".title3", { type: "chars" });
     let subTitle = SplitText.create(".subTitle3", { type: "chars" });
@@ -36,7 +35,7 @@ const Testimonials = () => {
         scrub: 0.3,
       },
 
-      defaults: { ease: "none" ,willChange : "transform opacity filter"}
+      defaults: { ease: "none", willChange: "transform opacity filter" },
     });
 
     tl.fromTo(
@@ -51,7 +50,8 @@ const Testimonials = () => {
         opacity: 1,
         filter: "blur(0px)",
         stagger: 0.05,
-      },"a"
+      },
+      "a"
     );
     tl.fromTo(
       subTitle.chars,
@@ -61,17 +61,18 @@ const Testimonials = () => {
         filter: "blur(5px)",
       },
       {
-        x :0,
+        x: 0,
         opacity: 1,
         filter: "blur(0px)",
         stagger: 0.03,
-      },"a"
+      },
+      "a"
     );
   });
 
   return (
     <>
-      <div className="text-center section-3 flex items-center flex-col max-[599px]:px-4">
+      <div className="text-center section-3 flex items-center flex-col max-[599px]:px-4 pt-10 max-[599px]:pt-0">
         <h1 className="text-[3vw] max-[599px]:text-[9vw] title3 text-[#1e1e1e] font-semibold">
           What Users Say
         </h1>
@@ -95,10 +96,10 @@ const Testimonials = () => {
         // scrollbar={{ draggable: true }}
         // onSwiper={(swiper) => console.log(swiper)}
         // onSlideChange={() => console.log('slide change')}
-        className="w-full h-[70vh] max-[599px]:h-[30vh] max-[599px]:my-6 relative px-40"
+        className="w-full h-[50vh] max-[599px]:h-[30vh] max-[599px]:my-6 relative px-40"
       >
         <SwiperSlide>
-          <div className="w-full h-full flex items-center justify-center text-8xl max-[599px]:px-4">
+          <div className="w-full h-full flex items-center justify-center text-8xl max-[599px]:px-4 ">
             <div className="max-w-4xl w-full rounded-3xl backdrop-blur-sm border border-[] p-12 max-[599px]:p-6">
               <div className="flex gap-8 items-start">
                 {/* <!-- Profile Image --> */}
@@ -119,8 +120,12 @@ const Testimonials = () => {
 
                   {/* <!-- Author Info --> */}
                   <div>
-                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">Emily Watson</p>
-                    <p className="text-base max-[599px]:text-[3vw]">Operations Director at CloudScale</p>
+                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">
+                      Emily Watson
+                    </p>
+                    <p className="text-base max-[599px]:text-[3vw]">
+                      Operations Director at CloudScale
+                    </p>
                   </div>
                 </div>
               </div>
@@ -149,8 +154,12 @@ const Testimonials = () => {
 
                   {/* <!-- Author Info --> */}
                   <div>
-                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">Emily Watson</p>
-                    <p className="text-base max-[599px]:text-[3vw]">Operations Director at CloudScale</p>
+                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">
+                      Emily Watson
+                    </p>
+                    <p className="text-base max-[599px]:text-[3vw]">
+                      Operations Director at CloudScale
+                    </p>
                   </div>
                 </div>
               </div>
@@ -179,8 +188,12 @@ const Testimonials = () => {
 
                   {/* <!-- Author Info --> */}
                   <div>
-                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">Emily Watson</p>
-                    <p className="text-base max-[599px]:text-[3vw]">Operations Director at CloudScale</p>
+                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">
+                      Emily Watson
+                    </p>
+                    <p className="text-base max-[599px]:text-[3vw]">
+                      Operations Director at CloudScale
+                    </p>
                   </div>
                 </div>
               </div>
@@ -209,8 +222,12 @@ const Testimonials = () => {
 
                   {/* <!-- Author Info --> */}
                   <div>
-                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">Emily Watson</p>
-                    <p className="text-base max-[599px]:text-[3vw]">Operations Director at CloudScale</p>
+                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">
+                      Emily Watson
+                    </p>
+                    <p className="text-base max-[599px]:text-[3vw]">
+                      Operations Director at CloudScale
+                    </p>
                   </div>
                 </div>
               </div>
@@ -239,8 +256,12 @@ const Testimonials = () => {
 
                   {/* <!-- Author Info --> */}
                   <div>
-                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">Emily Watson</p>
-                    <p className="text-base max-[599px]:text-[3vw]">Operations Director at CloudScale</p>
+                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">
+                      Emily Watson
+                    </p>
+                    <p className="text-base max-[599px]:text-[3vw]">
+                      Operations Director at CloudScale
+                    </p>
                   </div>
                 </div>
               </div>

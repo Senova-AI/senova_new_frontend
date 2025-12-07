@@ -100,10 +100,10 @@ const Hero = () => {
         hue={0}
         forceHoverState={false}
       /> */}
-      <div className="overlay absolute inset-0 w-full h-screen pointer-events-none flex items-center justify-center flex-col gap-20 max-[599px]:gap-16 px-60 max-[599px]:px-4 text-[#1E1E1E] font-semibold text-[7.5vw] max-[599px]:text-[15vw] leading-none">
+      <div className="overlay absolute inset-0 pt-20 max-[599px]:pt-10 w-full h-screen pointer-events-none flex items-center justify-center flex-col gap-20 max-[599px]:gap-16 px-60 max-[599px]:px-4 text-[#1E1E1E] font-semibold text-[9vw] max-[599px]:text-[15vw] leading-none">
         <div className="title-one w-full relative">
-          <h1 className="head1">Intelligent</h1>
-          <div className="box1 flex items-center gap-4 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm rounded-t-xl rounded-r-xl px-6 max-[599px]:px-4 py-3 max-[599px]:py-2 w-fit  shadow-md absolute left-[40%] -top-8 max-[599px]:-top-14 text-[.9vw] leading-tight max-[599px]:text-[3vw] text-[#6F6F6F] font-normal">
+          <h1 className="head1">Unplug</h1>
+          <div className="box1 flex items-center gap-4 bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm rounded-t-xl rounded-r-xl px-6 max-[599px]:px-4 py-3 max-[599px]:py-2 w-fit shadow-md absolute left-[37%] -top-9 max-[599px]:-top-24 text-[.9vw] leading-tight max-[599px]:text-[3vw] text-[#6F6F6F] font-normal">
             <span className="flex items-center justify-center rounded-full bg-[#4A4A4A] w-10 max-[599px]:w-8 h-10 max-[599px]:h-8">
               <svg width="26" height="26" viewBox="0 0 18 18" fill="none">
                 <circle cx="9" cy="4.5" r="1.5" fill="#fff" fillOpacity="0.8" />
@@ -125,15 +125,14 @@ const Hero = () => {
               </svg>
             </span>
             <span>
-              How to be happy and stop
-              <br />
-              worrying all the time?
+              Trapped by worry, cognitive debt, <br /> and endless prompts? Stop
+              feeling <br /> overwhelmed by the AI-driven world.
             </span>
           </div>
         </div>
         <div className="title-two w-full text-center relative">
-          <h1 className="head2">Mental Health</h1>
-          <div className="box2 flex items-center gap-4 bg-gradient-to-br from-white/20 to-white/10 rounded-b-xl rounded-l-xl px-6 max-[599px]:px-4 py-3 max-[599px]:py-2 w-fit  backdrop-blur-sm shadow-md absolute left-14 max-[599px]:left-6 -bottom-26 max-[599px]:-bottom-16 text-[.9vw] le max-[599px]:text-[3vw] lading-tight text-left text-[#6f6f6f] font-normal">
+          <h1 className="head2">Think</h1>
+          <div className="box2 flex items-center gap-4 bg-gradient-to-br from-white/20 to-white/10 rounded-b-xl rounded-l-xl px-6 max-[599px]:px-4 py-3 max-[599px]:py-2 w-fit  backdrop-blur-sm shadow-md absolute left-1/6 max-[599px]:left-0 -bottom-24 max-[599px]:-bottom-16 text-[.9vw] le max-[599px]:text-[3vw] leading-tight text-left text-[#6f6f6f] font-normal">
             <span className="flex items-center justify-center rounded-full bg-[#4a4a4a] w-10 max-[599px]:w-8 h-10 max-[599px]:h-8">
               <svg width="26" height="26" viewBox="0 0 18 18" fill="none">
                 <circle cx="9" cy="4.5" r="1.5" fill="#fff" fillOpacity="0.8" />
@@ -155,19 +154,15 @@ const Hero = () => {
               </svg>
             </span>
             <span>
-              I understand. It's important to
-              <br />
-              seek support and talk to a mental
-              <br />
-              health professional. I can provide
-              <br />
-              you with resources.
+              Our AI doesn't just answer it notices. <br /> Get empathetic
+              support and instant <br /> access to mental health resources{" "}
+              <br /> when you need a safe pivot.
             </span>
           </div>
         </div>
         <div className="title-three w-full text-right relative">
-          <h1 className="head3">AI Chatbot</h1>
-          <div className="box3 flex items-center gap-4 bg-gradient-to-br from-white/20 to-white/10 rounded-r-xl rounded-b-xl px-6 max-[599px]:px-4 py-3 max-[599px]:py-2 w-fit max-[599px]:w-[67%] shadow-md backdrop-blur-sm absolute left-[72%] max-[599px]:left-[35%] -bottom-20 max-[599px]:-bottom-18 text-[.9vw] max-[599px]:text-[3vw] leading-tight text-[#6f6f6f] text-left font-normal">
+          <h1 className="head3">Thrive</h1>
+          <div className="box3 flex items-center gap-4 bg-gradient-to-br from-white/20 to-white/10 rounded-b-xl rounded-l-xl px-6 max-[599px]:px-4 py-3 max-[599px]:py-2 w-fit max-[599px]:w-[67%] shadow-md backdrop-blur-sm absolute left-[55%] max-[599px]:left-[33%] -bottom-20 max-[599px]:-bottom-26 text-[.9vw] max-[599px]:text-[3vw] leading-tight text-[#6f6f6f] text-left font-normal">
             <span className="flex items-center justify-center rounded-full bg-[#4a4a4a] w-10 max-[599px]:w-8 h-10 max-[599px]:h-8">
               <svg width="26" height="26" viewBox="0 0 18 18" fill="none">
                 <circle cx="9" cy="4.5" r="1.5" fill="#fff" fillOpacity="0.8" />
@@ -189,11 +184,9 @@ const Hero = () => {
               </svg>
             </span>
             <span>
-              Let's focus on self-care activities,
-              <br />
-              like engaging in hobbies,
-              <br />
-              connecting with loved ones!
+              Reclaim your focus. Use our wellness games <br /> and tools to
+              rebuild critical thought and master <br /> mental resilience.
+              Think Deep. Live Well.
             </span>
           </div>
         </div>

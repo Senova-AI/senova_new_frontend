@@ -36,7 +36,7 @@ const CameraController = () => {
   return null;
 };
 
-const Analysis = () => {
+const Ppolicy = () => {
   return (
     <>
       <Loader />
@@ -56,4 +56,4 @@ const Analysis = () => {
   );
 };
 
-export default Analysis;
+export default Ppolicy;

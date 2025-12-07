@@ -138,9 +138,9 @@ const Navbar = () => {
         filter: "blur(5px)",
         opacity: 0,
         stagger: 0.03,
-        onComplete : ()=>{
-          gsap.set(imgTxt.chars,{x : 0,filter : "blur(0px)",opacity : 1})
-        }
+        onComplete: () => {
+          gsap.set(imgTxt.chars, { x: 0, filter: "blur(0px)", opacity: 1 });
+        },
       }
     );
   }
@@ -170,7 +170,7 @@ const Navbar = () => {
     });
   };
 
-  // homeicon 30 
+  // homeicon 30
   // closeicon 32
 
   return (
@@ -179,7 +179,7 @@ const Navbar = () => {
         <nav className="w-full flex items-center justify-between">
           <Link to="/">
             <div className="left p-6 max-[599px]:p-3 text-[#dedede] bg-[#4a4a4a] rounded-full flex items-center justify-center cursor-pointer">
-              <GoHomeFill size={window.innerWidth <= 599 ? 26 : 30}  />
+              <GoHomeFill size={window.innerWidth <= 599 ? 26 : 30} />
             </div>
           </Link>
           <div className="middle px-20 max-[599px]:px-10 py-4 max-[599px]:py-3 bg-[#6f6f6f] text-white rounded-full flex items-center justify-center gap-4 cursor-pointer">
@@ -232,7 +232,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="right w-1/2 max-[599px]:w-full h-full flex items-center justify-center bg-[#1e1e1e]">
-            <div className="links flex items-center justify-center flex-col font-semibold uppercase text-[4vw] max-[599px]:text-[10vw]">
+            <div className="links flex items-center justify-center flex-col font-semibold uppercase text-[4vw] max-[599px]:text-[8vw]">
               {["Home", "Analysis", "Research", "About Us", "Contacts"].map(
                 (text, index) => (
                   <Link

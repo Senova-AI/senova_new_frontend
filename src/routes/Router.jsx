@@ -6,6 +6,8 @@ import App from "../App";
 import Contact from "../pages/Contact";
 import Research from "../pages/Research";
 import Analysis from "../pages/Analysis";
+import TC from "../pages/TC";
+import Ppolicy from "../pages/Ppolicy.jsx";
 
 const Router = createBrowserRouter([
   {
@@ -31,6 +33,16 @@ const Router = createBrowserRouter([
   {
     path: "/analysis",
     element: <Analysis />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/privacy-policy",
+    element: <Ppolicy />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/terms-conditions",
+    element: <TC />,
     errorElement: <ErrorPage />,
   },
 ]);

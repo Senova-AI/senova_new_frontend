@@ -1,6 +1,6 @@
-import { useRef, useState } from 'react';
-import { motion, useMotionValue, useSpring } from 'motion/react';
-import { FaLinkedinIn } from 'react-icons/fa';
+import { useRef, useState } from "react";
+import { motion, useMotionValue, useSpring } from "motion/react";
+import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdMailOutline } from "react-icons/md";
 import { IoMail } from "react-icons/io5";
@@ -8,17 +8,17 @@ import { IoMail } from "react-icons/io5";
 const springValues = {
   damping: 30,
   stiffness: 100,
-  mass: 2
+  mass: 2,
 };
 
 export default function TiltedCard({
   imageSrc,
-  altText = 'Tilted card image',
-  captionText = '',
-  containerHeight = '300px',
-  containerWidth = '100%',
-  imageHeight = '300px',
-  imageWidth = '300px',
+  altText = "Tilted card image",
+  captionText = "",
+  containerHeight = "300px",
+  containerWidth = "100%",
+  imageHeight = "300px",
+  imageWidth = "300px",
   scaleOnHover = 1.1,
   rotateAmplitude = 14,
   showMobileWarning = true,
@@ -27,7 +27,7 @@ export default function TiltedCard({
   displayOverlayContent = false,
   linkedin,
   twitter,
-  mail
+  mail,
 }) {
   const ref = useRef(null);
   const x = useMotionValue(0);
@@ -39,7 +39,7 @@ export default function TiltedCard({
   const rotateFigcaption = useSpring(0, {
     stiffness: 350,
     damping: 30,
-    mass: 1
+    mass: 1,
   });
 
   const [lastY, setLastY] = useState(0);
@@ -84,7 +84,7 @@ export default function TiltedCard({
       className="relative w-full h-full [perspective:800px] flex flex-col items-center justify-center"
       style={{
         height: containerHeight,
-        width: containerWidth
+        width: containerWidth,
       }}
       onMouseMove={handleMouse}
       onMouseEnter={handleMouseEnter}
@@ -103,7 +103,7 @@ export default function TiltedCard({
           height: imageHeight,
           rotateX,
           rotateY,
-          scale
+          scale,
         }}
       >
         <motion.img
@@ -112,7 +112,7 @@ export default function TiltedCard({
           className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
           style={{
             width: imageWidth,
-            height: imageHeight
+            height: imageHeight,
           }}
         />
 
@@ -130,17 +130,20 @@ export default function TiltedCard({
             x,
             y,
             opacity,
-            rotate: rotateFigcaption
+            rotate: rotateFigcaption,
           }}
         >
           {captionText}
         </motion.figcaption>
       )}
-      <motion.div style={{
+      <motion.div
+        style={{
           rotateX,
           rotateY,
-        //   scale
-        }} className='absolute bottom-3 max-[599px]:left-1/2 max-[599px]:-translate-x-1/2 left-3 rounded-full py-3 px-6 bg-black/20 text-[#dedede]'>
+          //   scale
+        }}
+        className="absolute bottom-3 max-[599px]:left-1/2 max-[599px]:-translate-x-1/2 left-3 rounded-full py-3 px-6 bg-black/20 text-[#dedede]"
+      >
         <div className="flex flex-row items-center justify-center gap-6">
           <a
             href={linkedin}
@@ -167,13 +170,13 @@ export default function TiltedCard({
             className="text-[#dedede] hover:text-[#dfa33a] transition-colors"
             aria-label="Email"
           >
-           <IoMail size={25} />
+            <IoMail size={25} />
           </a>
         </div>
       </motion.div>
-        <p className="pointer-events-none hidden max-[599px]:block absolute right-5 top-5 rounded-full bg-[#dedede] px-[10px] py-[4px] text-[15px] text-[#4a4a4a]">
-              {captionText}
-            </p>
+      <p className="pointer-events-none hidden max-[599px]:block absolute right-5 top-5 rounded-full bg-[#dedede] px-[10px] py-[4px] text-[15px] text-[#4a4a4a]">
+        {captionText}
+      </p>
     </figure>
   );
 }

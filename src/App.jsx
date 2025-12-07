@@ -41,7 +41,6 @@ const CameraController = () => {
 const App = () => {
   return (
     <>
-     
       <div className="fixed top-0 left-0 w-full h-full z-1">
         <Canvas id="canvas">
           {/* <OrbitControls enableDamping={true} /> */}
@@ -49,8 +48,6 @@ const App = () => {
           <Scene />
         </Canvas>
       </div>
-
-
 
       <div className="papa-div w-full h-full absolute top-0 left-0 z-2">
         <Landing />
