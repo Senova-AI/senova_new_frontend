@@ -217,9 +217,9 @@ const Navbar = () => {
       </header>
       <div className="overlay-nav fixed right-[100%] z-40 top-0 w-full h-screen flex items-center justify-center  text-[#dedede] bg-[#1e1e1e]">
         <nav className="overlay-nav-content w-full h-full flex items-center justify-center max-[599px]:flex-col">
-          <div className="left w-1/2 max-[599px]:w-full h-full flex items-center justify-center bg-[#dedede]">
-            <div className="logo will-change-auto flex items-center gap-4 max-[599px]:gap-2">
-              <div className="img-container w-32 max-[599px]:w-26">
+          <div className="left w-1/2 max-[599px]:w-full h-full max-[599px]:h-[70%] flex items-center justify-center bg-[#dedede]">
+            <div className="logo will-change-auto flex items-center gap-4 max-[599px]:gap-2 max-[599px]:pt-10">
+              <div className="img-container w-36 max-[599px]:w-20 max-[599px]:-ml-6">
                 <img
                   className="w-full img h-full object-cover"
                   src="/logo.png"

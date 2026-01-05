@@ -80,10 +80,10 @@ const How = () => {
         <div className="w-screen h-full py-20">
           {/* <div className="title text-[#1e1e1e] text-[5vw] font-semibold text-center">How to use Senova AI</div> */}
           <div className="w-full h-full flex items-center justify-center text-center flex-col max-[599px]:px-4">
-            <h2 className="text-[3vw] max-[599px]:text-[8.2vw] title2 font-semibold">
+            <h2 className="text-[3vw] max-[599px]:text-[7.5vw] title2 font-semibold">
               Senova AI Extension Setup
             </h2>
-            <p className="w-[50%] max-[599px]:w-full subTitle2 text-[#4a4a4a] text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
+            <p className="w-[50%] max-[599px]:w-[95%] subTitle2 text-[#4a4a4a] text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
               Follow these simple steps to load the Senova AI extension and
               begin your journey to mindful learning.
             </p>
