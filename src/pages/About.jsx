@@ -431,10 +431,11 @@ const About = () => {
       </div>
       {/* <section className="papa-div w-full h-full absolute top-0 left-0 z-2"> */}
       <main className="w-full overflow-hidden relative font-[sf] z-2">
-        <div className="w-full hero relative h-screen flex items-center justify-center pt-36  text-[#1E1E1E] flex-col px-40 max-[599px]:px-4">
-          <h1 className="font-bold aTitle text-[7.5vw] max-[599px]:text-[10vw] text-center leading-none uppercase pb-6 max-[599px]:pb-2">
-            About Senova AI
-          </h1>
+        <div className="w-full hero relative h-screen flex items-center justify-center max-[599px]:pt-36  text-[#1E1E1E] flex-col px-40 max-[599px]:px-4">
+          <h1 className="text-[3vw] max-[599px]:text-[9vw] aSubTitle text-center leading-tight uppercase">About</h1>
+          <h2 className="font-bold aTitle text-[13vw] max-[599px]:text-[16vw] text-center leading-none uppercase pb-6 max-[599px]:pb-2">
+           Senova AI
+          </h2>
           <p className="text-[1.5vw] max-[599px]:text-[3.5vw] aSubTitle text-center leading-tight">
             Senova AI is dedicated to building advanced artificial intelligence
             solutions that empower businesses and individuals. Our mission is to
@@ -478,7 +479,7 @@ const About = () => {
               containerWidth="350px"
               imageHeight="450px"
               imageWidth="350px"
-              rotateAmplitude={12}
+              rotateAmplitude={4}
               scaleOnHover={1.1}
               showMobileWarning={false}
               showTooltip={true}
@@ -502,7 +503,7 @@ const About = () => {
               containerWidth="350px"
               imageHeight="450px"
               imageWidth="350px"
-              rotateAmplitude={12}
+              rotateAmplitude={4}
               scaleOnHover={1.1}
               showMobileWarning={false}
               showTooltip={true}
@@ -526,7 +527,7 @@ const About = () => {
               containerWidth="350px"
               imageHeight="450px"
               imageWidth="350px"
-              rotateAmplitude={12}
+              rotateAmplitude={4}
               scaleOnHover={1.1}
               showMobileWarning={false}
               showTooltip={true}
@@ -563,7 +564,7 @@ const About = () => {
               containerWidth="350px"
               imageHeight="450px"
               imageWidth="350px"
-              rotateAmplitude={12}
+              rotateAmplitude={4}
               scaleOnHover={1.1}
               showMobileWarning={false}
               showTooltip={true}
@@ -587,7 +588,7 @@ const About = () => {
               containerWidth="350px"
               imageHeight="450px"
               imageWidth="350px"
-              rotateAmplitude={12}
+              rotateAmplitude={4}
               scaleOnHover={1.1}
               showMobileWarning={false}
               showTooltip={true}
@@ -611,7 +612,7 @@ const About = () => {
               containerWidth="350px"
               imageHeight="450px"
               imageWidth="350px"
-              rotateAmplitude={12}
+              rotateAmplitude={4}
               scaleOnHover={1.1}
               showMobileWarning={false}
               showTooltip={true}

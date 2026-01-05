@@ -31,7 +31,7 @@ const Contactdata = [
   },
   {
     name: "Sameer Khan",
-    role: "Frontend Developer",
+    role: "Developer",
     imageSrc: "https://avatars.githubusercontent.com/u/131584949?v=4",
     linkedin: "https://www.linkedin.com/in/dev-sameer-khan/",
     twitter: "https://x.com/Sameer_8teen",
@@ -39,11 +39,11 @@ const Contactdata = [
   },
   {
     name: "Isha Surana",
-    role: "Clinical Psycologist & Researcher",
+    role: "Clinical Psychologist & Researcher",
     imageSrc: "/isha.svg",
-    linkedin: "https://www.linkedin.com/in/tester-sicologist/",
-    twitter: "https://twitter.com/tester_sicologist",
-    mail: "tester.sicologist@example.com",
+    linkedin: "https://www.linkedin.com/in/isha-surana-a526291b4/",
+    twitter: "https://x.com/ishasurana2001",
+    mail: "ishasurana2001@gmail.com",
   },
 ];
 
@@ -150,7 +150,7 @@ const Contact = () => {
               containerWidth="350px"
               imageHeight="450px"
               imageWidth="350px"
-              rotateAmplitude={12}
+              rotateAmplitude={4}
               scaleOnHover={1.1}
               showMobileWarning={false}
               showTooltip={true}

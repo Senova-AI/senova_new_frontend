@@ -177,10 +177,10 @@ const Footer = () => {
           <div className="right w-1/2 max-[599px]:w-full h-full text-[#dedede] pt-20 max-[599px]:pt-20 max-[599px]:px-4">
             <div className="head">
               <div className="logo flex items-center gap-2">
-                <div className="img-container w-14">
+                <div className="img-container w-20">
                   <img
                     className="w-full h-full object-cover filter brightness-0 invert"
-                    src="https://www.senova.in/assets/logo.png"
+                    src="/favicon.png"
                     alt=""
                   />
                 </div>

@@ -21,6 +21,49 @@ import gsap from "gsap";
 
 gsap.registerPlugin(SplitText);
 
+const slideData = [
+  {
+    img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
+    alt: "Emily Watson",
+    text:
+      "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+    name: "Emily Watson",
+    title: "Operations Director at CloudScale",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=150&h=150&fit=crop",
+    alt: "David Lee",
+    text:
+      "Senova AI completely revolutionized our workflow and allowed us to focus on creative problem-solving.",
+    name: "David Lee",
+    title: "Lead Software Engineer at Innovent",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=150&h=150&fit=crop",
+    alt: "Sophia Miller",
+    text:
+      "As a researcher, I value the clarity and depth this platform brings to cognitive exploration.",
+    name: "Sophia Miller",
+    title: "Cognitive Researcher at MindForge",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=150&h=150&fit=crop",
+    alt: "Michael Chen",
+    text:
+      "The support team is top-notch and really took the time to understand our challenges. Highly recommended!",
+    name: "Michael Chen",
+    title: "Product Manager at SaaSvance",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop",
+    alt: "Amelia Patel",
+    text:
+      "Robust, reliable, and beautifully designed — Senova AI sets a new standard for intelligent solutions.",
+    name: "Amelia Patel",
+    title: "CTO at NovaTech",
+  },
+];
+
 const Testimonials = () => {
   useGSAP(() => {
     let title = SplitText.create(".title3", { type: "chars" });
@@ -83,191 +126,45 @@ const Testimonials = () => {
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-        // spaceBetween={50}
         slidesPerView={1}
         loop={true}
         grabCursor
-        // autoplay={{
-        //     delay: 2500,
-        //     disableOnInteraction: false,
-        //   }}
-        // navigation
-        // pagination={{ clickable: true , enabled : false}}
-        // scrollbar={{ draggable: true }}
-        // onSwiper={(swiper) => console.log(swiper)}
-        // onSlideChange={() => console.log('slide change')}
         className="w-full h-[50vh] max-[599px]:h-[30vh] max-[599px]:my-6 relative px-40"
       >
-        <SwiperSlide>
-          <div className="w-full h-full flex items-center justify-center text-8xl max-[599px]:px-4 ">
-            <div className="max-w-4xl w-full rounded-3xl backdrop-blur-sm border border-[] p-12 max-[599px]:p-6">
-              <div className="flex gap-8 items-start">
-                {/* <!-- Profile Image --> */}
-                <img
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
-                  alt="Emily Watson"
-                  className="w-24 max-[599px]:h-20 h-24 max-[599px]:w-20 rounded-full object-cover shrink-0"
-                />
+        {slideData.map((slide, idx) => (
+          <SwiperSlide key={idx}>
+            <div className="w-full h-full flex items-center justify-center text-8xl max-[599px]:px-4 ">
+              <div className="max-w-4xl w-full rounded-3xl backdrop-blur-sm border border-[] p-12 max-[599px]:p-6">
+                <div className="flex gap-8 items-start">
+                  {/* <!-- Profile Image --> */}
+                  <img
+                    src={slide.img}
+                    alt={slide.alt}
+                    className="w-24 max-[599px]:h-20 h-24 max-[599px]:w-20 rounded-full object-cover shrink-0"
+                  />
 
-                {/* <!-- Content --> */}
-                <div className="flex-1 text-[#1e1e1e]">
-                  {/* <!-- Testimonial Text --> */}
-                  <p className="text-2xl max-[599px]:text-[3.2vw] leading-relaxed mb-8 max-[599px]:mb-4">
-                    "This solution has significantly improved our team's
-                    productivity. The intuitive interface makes complex tasks
-                    simple."
-                  </p>
+                  {/* <!-- Content --> */}
+                  <div className="flex-1 text-[#1e1e1e]">
+                    {/* <!-- Testimonial Text --> */}
+                    <p className="text-2xl max-[599px]:text-[3.2vw] leading-relaxed mb-8 max-[599px]:mb-4">
+                      "{slide.text}"
+                    </p>
 
-                  {/* <!-- Author Info --> */}
-                  <div>
-                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">
-                      Emily Watson
-                    </p>
-                    <p className="text-base max-[599px]:text-[3vw]">
-                      Operations Director at CloudScale
-                    </p>
+                    {/* <!-- Author Info --> */}
+                    <div>
+                      <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">
+                        {slide.name}
+                      </p>
+                      <p className="text-base max-[599px]:text-[3vw]">
+                        {slide.title}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-full flex items-center justify-center text-8xl max-[599px]:px-4">
-            <div className="max-w-4xl w-full rounded-3xl backdrop-blur-sm border border-[] p-12 max-[599px]:p-6">
-              <div className="flex gap-8 items-start">
-                {/* <!-- Profile Image --> */}
-                <img
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
-                  alt="Emily Watson"
-                  className="w-24 max-[599px]:h-20 h-24 max-[599px]:w-20 rounded-full object-cover shrink-0"
-                />
-
-                {/* <!-- Content --> */}
-                <div className="flex-1 text-[#1e1e1e]">
-                  {/* <!-- Testimonial Text --> */}
-                  <p className="text-2xl max-[599px]:text-[3.2vw] leading-relaxed mb-8 max-[599px]:mb-4">
-                    "This solution has significantly improved our team's
-                    productivity. The intuitive interface makes complex tasks
-                    simple."
-                  </p>
-
-                  {/* <!-- Author Info --> */}
-                  <div>
-                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">
-                      Emily Watson
-                    </p>
-                    <p className="text-base max-[599px]:text-[3vw]">
-                      Operations Director at CloudScale
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-full flex items-center justify-center text-8xl max-[599px]:px-4">
-            <div className="max-w-4xl w-full rounded-3xl backdrop-blur-sm border border-[] p-12 max-[599px]:p-6">
-              <div className="flex gap-8 items-start">
-                {/* <!-- Profile Image --> */}
-                <img
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
-                  alt="Emily Watson"
-                  className="w-24 max-[599px]:h-20 h-24 max-[599px]:w-20 rounded-full object-cover shrink-0"
-                />
-
-                {/* <!-- Content --> */}
-                <div className="flex-1 text-[#1e1e1e]">
-                  {/* <!-- Testimonial Text --> */}
-                  <p className="text-2xl max-[599px]:text-[3.2vw] leading-relaxed mb-8 max-[599px]:mb-4">
-                    "This solution has significantly improved our team's
-                    productivity. The intuitive interface makes complex tasks
-                    simple."
-                  </p>
-
-                  {/* <!-- Author Info --> */}
-                  <div>
-                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">
-                      Emily Watson
-                    </p>
-                    <p className="text-base max-[599px]:text-[3vw]">
-                      Operations Director at CloudScale
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-full flex items-center justify-center text-8xl max-[599px]:px-4">
-            <div className="max-w-4xl w-full rounded-3xl backdrop-blur-sm border border-[] p-12 max-[599px]:p-6">
-              <div className="flex gap-8 items-start">
-                {/* <!-- Profile Image --> */}
-                <img
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
-                  alt="Emily Watson"
-                  className="w-24 max-[599px]:h-20 h-24 max-[599px]:w-20 rounded-full object-cover shrink-0"
-                />
-
-                {/* <!-- Content --> */}
-                <div className="flex-1 text-[#1e1e1e]">
-                  {/* <!-- Testimonial Text --> */}
-                  <p className="text-2xl max-[599px]:text-[3.2vw] leading-relaxed mb-8 max-[599px]:mb-4">
-                    "This solution has significantly improved our team's
-                    productivity. The intuitive interface makes complex tasks
-                    simple."
-                  </p>
-
-                  {/* <!-- Author Info --> */}
-                  <div>
-                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">
-                      Emily Watson
-                    </p>
-                    <p className="text-base max-[599px]:text-[3vw]">
-                      Operations Director at CloudScale
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-full flex items-center justify-center text-8xl max-[599px]:px-4">
-            <div className="max-w-4xl w-full rounded-3xl backdrop-blur-sm border border-[] p-12 max-[599px]:p-6">
-              <div className="flex gap-8 items-start">
-                {/* <!-- Profile Image --> */}
-                <img
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
-                  alt="Emily Watson"
-                  className="w-24 max-[599px]:h-20 h-24 max-[599px]:w-20 rounded-full object-cover shrink-0"
-                />
-
-                {/* <!-- Content --> */}
-                <div className="flex-1 text-[#1e1e1e]">
-                  {/* <!-- Testimonial Text --> */}
-                  <p className="text-2xl max-[599px]:text-[3.2vw] leading-relaxed mb-8 max-[599px]:mb-4">
-                    "This solution has significantly improved our team's
-                    productivity. The intuitive interface makes complex tasks
-                    simple."
-                  </p>
-
-                  {/* <!-- Author Info --> */}
-                  <div>
-                    <p className=" font-semibold text-lg max-[599px]:text-[3.5vw] mb-1">
-                      Emily Watson
-                    </p>
-                    <p className="text-base max-[599px]:text-[3vw]">
-                      Operations Director at CloudScale
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );
