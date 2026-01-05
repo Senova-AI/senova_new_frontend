@@ -47,6 +47,8 @@ const CameraController = () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+
 const faqData = [
   {
     question: "What is Senova AI?",

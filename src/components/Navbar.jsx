@@ -182,11 +182,11 @@ const Navbar = () => {
               <GoHomeFill size={window.innerWidth <= 599 ? 26 : 30} />
             </div>
           </Link>
-          <div className="middle px-20 max-[599px]:px-10 py-4 max-[599px]:py-3 bg-[#6f6f6f] text-white rounded-full flex items-center justify-center gap-4 cursor-pointer">
-            <div className="img-container w-10 max-[599px]:w-7">
+          <div className="middle px-20 max-[599px]:px-10 py-2 max-[599px]:py-3 bg-[#6f6f6f] text-white rounded-full flex items-center justify-center gap-4 cursor-pointer">
+            <div className="img-container w-16 max-[599px]:w-7">
               <img
                 className="w-full h-full object-cover filter brightness-0 invert"
-                src="https://www.senova.in/assets/logo.png"
+                src="/favicon.png"
                 alt=""
               />
             </div>
