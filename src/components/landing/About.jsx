@@ -205,20 +205,20 @@ const About = () => {
         </p>
       </section>
       <section className="w-full section1-2 h-screen flex items-center justify-end px-40 max-[599px]:px-4">
-        <div className="w-[60%] max-[599px]:w-full dets1 border border-[#4a4a4a]/30 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 backdrop-blur-sm rounded-xl flex flex-col">
-          <h1 className="text-[#1e1e1e] fTitle1 text-[3vw] max-[599px]:text-[9vw] leading-none font-bold mb-4">
+        <div className="w-[60%] max-[599px]:w-full bg-[#0F0F0F]/50 dets1 border border-[#4a4a4a]/30 shadow-2xl hover:shadow-xl transition-shadow duration-300 p-6 backdrop-blur-sm rounded-xl flex flex-col">
+          <h1 className="text-white/80 fTitle1 text-[3vw] max-[599px]:text-[9vw] leading-none font-bold mb-4">
             The Cognitive Cost
           </h1>
-          <p className="text-[#4a4a4a] fSubtitle1 text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
+          <p className="text-white/60 fSubtitle1 text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
             <strong>AI's Impact on the Brain Feature Focus:</strong> Neural
             Atrophy from Cognitive Offloading AI over-reliance triggers
             cognitive offloading, damaging the mental effort needed for
             learning. This causes atrophy in key brain regions like the PFC and
             hippocampus.
           </p>
-          <ol className="text-left list1 relative mt-4 list-disc pl-6 flex flex-col gap-y-3 text-[#4a4a4a] text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
+          <ol className="text-left list1 relative mt-4 list-disc pl-6 flex flex-col gap-y-3 text-white/60 text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
             <li className="mb-2 list-none -ml-6 ">
-              <strong>Key Neural Deterioration Points</strong>
+              <strong className="text-white/80">Key Neural Deterioration Points</strong>
             </li>
             <li>
               <strong>PFC Hypoactivity:</strong> The prefrontal cortex shows
@@ -248,11 +248,11 @@ const About = () => {
         </div>
       </section>
       <section className="w-full section1-3 h-screen flex items-center justify-start px-40 max-[599px]:px-4">
-        <div className="w-[60%] dets2 max-[599px]:w-full  border border-[#4a4a4a]/30 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 backdrop-blur-sm rounded-xl flex flex-col">
-          <h1 className="fTitle2 text-[#1e1e1e] text-[3vw] max-[599px]:text-[9vw] leading-none font-bold mb-4">
+        <div className="w-[60%] dets2 max-[599px]:w-full bg-[#0F0F0F]/50 border border-[#4a4a4a]/30 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 backdrop-blur-sm rounded-xl flex flex-col">
+          <h1 className="fTitle2 text-white/80 text-[3vw] max-[599px]:text-[9vw] leading-none font-bold mb-4">
             The Cognitive Treatment
           </h1>
-          <p className="fSubtitle2 text-[#4a4a4a] text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
+          <p className="fSubtitle2 text-white/60 text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
             <strong>Rebuilding the Mind Feature Focus:</strong> Active Retrieval
             and Neuro-Rehabilitation The cure for cognitive debt requires
             replacing passive AI use with effortful, active reconstruction,
@@ -288,11 +288,11 @@ const About = () => {
         </div>
       </section>
       <section className="w-full section1-4 h-screen flex items-center justify-end px-40 max-[599px]:px-4">
-        <div className="w-[60%] max-[599px]:w-full dets3 border border-[#4a4a4a]/30 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 backdrop-blur-sm rounded-xl flex flex-col">
-          <h1 className="text-[#1e1e1e] fTitle3 text-[3vw] max-[599px]:text-[9vw] leading-none font-bold mb-4">
+        <div className="w-[60%] max-[599px]:w-full dets3 border bg-[#0F0F0F]/50 border-[#4a4a4a]/30 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 backdrop-blur-sm rounded-xl flex flex-col">
+          <h1 className="text-white/80 fTitle3 text-[3vw] max-[599px]:text-[9vw] leading-none font-bold mb-4">
             AI-Enforced Cognitive Reflection
           </h1>
-          <p className="text-[#4a4a4a] fSubtitle3 text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
+          <p className="text-white/60 fSubtitle3 text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
             <strong>Feature Focus:</strong> Bridging Psychology and Technology
             Senova uses specialized AI as a cognitive enforcer, compelling the
             user into active retrieval and effortful cognition to stop passive
@@ -334,11 +334,11 @@ const About = () => {
         </div>
       </section>
       <section className="w-full section1-5 h-screen flex items-center justify-start px-40 max-[599px]:px-4">
-        <div className="w-[60%] max-[599px]:w-full dets4 border border-[#4a4a4a]/30 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 backdrop-blur-sm rounded-xl flex flex-col">
-          <h1 className="text-[#1e1e1e] text-[3vw] max-[599px]:text-[9vw] leading-none font-bold mb-4">
+        <div className="w-[60%] max-[599px]:w-full dets4 bg-[#0F0F0F]/50 border border-[#4a4a4a]/30 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 backdrop-blur-sm rounded-xl flex flex-col">
+          <h1 className="text-white/80 text-[3vw] max-[599px]:text-[9vw] leading-none font-bold mb-4">
             Interactive Wellness and Cognitive Games
           </h1>
-          <p className="text-[#4a4a4a] text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
+          <p className="text-white/60 text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
             <strong> Feature Focus:</strong> Gamified Neuro-Rehabilitation
             Translates abstract cognitive principles into engaging activities
             for Active Retrieval and Emotional Regulation.
@@ -375,11 +375,11 @@ const About = () => {
         </div>
       </section>
       <section className="w-full section1-6 h-screen flex items-center justify-end px-40 max-[599px]:px-4">
-        <div className="w-[60%] max-[599px]:w-full dets5 border border-[#4a4a4a]/30 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 backdrop-blur-sm rounded-xl flex flex-col">
-          <h1 className="text-[#1e1e1e] text-[3vw] max-[599px]:text-[9vw] leading-none font-bold mb-4">
+        <div className="w-[60%] max-[599px]:w-full dets5 bg-[#0F0F0F]/50 border border-[#4a4a4a]/30 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 backdrop-blur-sm rounded-xl flex flex-col">
+          <h1 className="text-white/80 text-[3vw] max-[599px]:text-[9vw] leading-none font-bold mb-4">
             Technical Architecture and Security
           </h1>
-          <p className="text-[#4a4a4a] text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
+          <p className="text-white/60 text-[1.2vw] max-[599px]:text-[3.2vw] leading-[1.3] font-medium">
             <strong>Feature Focus:</strong> Privacy, Data Integrity, and
             Performance
             <ol className="text-left mt-4 list-disc pl-6 flex flex-col gap-y-3">
