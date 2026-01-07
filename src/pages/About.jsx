@@ -12,7 +12,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useState } from "react";
 import { FaDownload } from "react-icons/fa";
-import { Tilt } from "react-tilt";
 import { SplitText } from "gsap/SplitText";
 import TiltedCard from "../components/TiltedCard";
 
