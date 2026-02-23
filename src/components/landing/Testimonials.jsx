@@ -23,43 +23,43 @@ gsap.registerPlugin(SplitText);
 
 const slideData = [
   {
-    img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
-    alt: "Emily Watson",
+    img: "https://images.unsplash.com/photo-1706433456693-5eaf15903735?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Pawan Kumar",
     text:
       "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-    name: "Emily Watson",
+    name: "Pawan Kumar",
     title: "Operations Director at CloudScale",
   },
   {
-    img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=150&h=150&fit=crop",
-    alt: "David Lee",
+    img: "https://images.unsplash.com/photo-1645799218342-b1c835bed7bf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Mahek Tripathi",
     text:
       "Senova AI completely revolutionized our workflow and allowed us to focus on creative problem-solving.",
-    name: "David Lee",
+    name: "Mahek Tripathi",
     title: "Lead Software Engineer at Innovent",
   },
   {
-    img: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=150&h=150&fit=crop",
-    alt: "Sophia Miller",
+    img: "https://images.unsplash.com/photo-1607457796060-a4249c341026?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Abuzar",
     text:
       "As a researcher, I value the clarity and depth this platform brings to cognitive exploration.",
-    name: "Sophia Miller",
+    name: "Abuzar",
     title: "Cognitive Researcher at MindForge",
   },
   {
-    img: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=150&h=150&fit=crop",
-    alt: "Michael Chen",
+    img: "https://images.unsplash.com/photo-1710655182570-a5069e1f4c23?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Divya Singh",
     text:
       "The support team is top-notch and really took the time to understand our challenges. Highly recommended!",
-    name: "Michael Chen",
+    name: "Divya Singh",
     title: "Product Manager at SaaSvance",
   },
   {
-    img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop",
-    alt: "Amelia Patel",
+    img: "https://images.unsplash.com/photo-1644488314605-1dd8d9c1b39c?q=80&w=746&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Sky Gupta",
     text:
       "Robust, reliable, and beautifully designed — Senova AI sets a new standard for intelligent solutions.",
-    name: "Amelia Patel",
+    name: "Sky Gupta",
     title: "CTO at NovaTech",
   },
 ];
