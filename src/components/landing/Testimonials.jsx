@@ -55,11 +55,11 @@ const slideData = [
     title: "Product Manager at SaaSvance",
   },
   {
-    img: "https://images.unsplash.com/photo-1644488314605-1dd8d9c1b39c?q=80&w=746&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Sky Gupta",
+    img: "https://images.unsplash.com/photo-1630667208073-82d53b1db540?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Zubair Sarookh",
     text:
       "Robust, reliable, and beautifully designed — Senova AI sets a new standard for intelligent solutions.",
-    name: "Sky Gupta",
+    name: "Zubair Sarookh",
     title: "CTO at NovaTech",
   },
 ];
